@@ -78,7 +78,7 @@ int isLeap(int year){
 	if(year%100 == 0 && year%400 != 0) return 0; /*Not a leap year*/
 	if(year%100 == 0 && year%400 == 0) return 1; /*Leap year*/
 	if(year%100 != 0 && year%400 != 0) return 1;
-	}else return 0;
+    }else return 0;
 }
 
 int dayCode(int day){
@@ -107,7 +107,6 @@ int yearCode(int year, int leap){
     if(digits>=28) digits = digits%28;
     new = 2000+digits; /*Transform to 21st century, baseline*/
     
-
     if(leap==0){
         leap=isLeap(new-1);
         if(leap==1){
