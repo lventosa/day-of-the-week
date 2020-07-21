@@ -75,9 +75,9 @@ void valiDate(int day, int month, int year, int leap){
 
 int isLeap(int year){
     if(year%4 == 0){
-		if(year%100 == 0 && year%400 != 0) return 0; /*Not a leap year*/
-	    if(year%100 == 0 && year%400 == 0) return 1; /*Leap year*/
-        if(year%100 != 0 && year%400 != 0) return 1;
+	if(year%100 == 0 && year%400 != 0) return 0; /*Not a leap year*/
+	if(year%100 == 0 && year%400 == 0) return 1; /*Leap year*/
+	if(year%100 != 0 && year%400 != 0) return 1;
 	}else return 0;
 }
 
