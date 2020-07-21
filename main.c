@@ -48,7 +48,7 @@ int main(void){
 }
 
 void valiDate(int day, int month, int year, int leap){
-    if(day<1 || month<1 || month>12 || year<1600 || year>=2400){
+    if(day<1 || day>31 || month<1 || month>12 || year<1600 || year>=2400){
         printf("Date not valid\n");
         exit(1);
     }
